@@ -6,4 +6,5 @@
 5-listfiles digit only will print same as 4 but replace everything with numbers
 6-first directory will generate a file known as my first directory in tmp directory
 7-move that file will move the file betty to directory at 6
-8- first delete deletes the file moved in 7 
+8- first delete deletes the file moved in 7
+9 this file will delete the directory from 6 
