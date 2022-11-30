@@ -8,4 +8,6 @@
 7-move that file will move the file betty to directory at 6
 8- first delete deletes the file moved in 7
 9 this file will delete the directory from 6
-10 this file will take you back to the previous directory 
+10 this file will take you back to the previous directory
+11 lists contents in order of the declared directories
+12 will print the file type 
