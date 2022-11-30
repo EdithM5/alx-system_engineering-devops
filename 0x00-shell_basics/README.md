@@ -10,4 +10,5 @@
 9 this file will delete the directory from 6
 10 this file will take you back to the previous directory
 11 lists contents in order of the declared directories
-12 will print the file type 
+12 will print the file type
+13 generates a link file to /bin/ls named __ls__
