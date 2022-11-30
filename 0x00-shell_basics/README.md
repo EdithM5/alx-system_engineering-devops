@@ -4,4 +4,5 @@
 3-listfiles will print current directory content in long format
 4-list more files will do the same job as 3 but include hidden files
 5-listfiles digit only will print same as 4 but replace everything with numbers
+6-first directory will generate a file known as my first directory in tmp directory
  
