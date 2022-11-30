@@ -12,3 +12,9 @@
 11 lists contents in order of the declared directories
 12 will print the file type
 13 generates a link file to /bin/ls named __ls__
+14 will copy non existent HTML files from current directory to parent directory
+15 will move all directories beginning with uppercase to the  directory /tmp/u
+16 will delete all files in the directory that end with ~
+17 will create 3 directories welcome/to/school
+18 will list all directories and files in the current directory
+19 will create a magic file that can detect files with the string school
