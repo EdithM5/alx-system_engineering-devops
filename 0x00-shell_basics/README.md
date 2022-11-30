@@ -5,4 +5,5 @@
 4-list more files will do the same job as 3 but include hidden files
 5-listfiles digit only will print same as 4 but replace everything with numbers
 6-first directory will generate a file known as my first directory in tmp directory
-7-move that file will move the file betty to directory at 6 
+7-move that file will move the file betty to directory at 6
+8- first delete deletes the file moved in 7 
