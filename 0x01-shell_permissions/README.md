@@ -12,4 +12,7 @@
 11-directories permisions will add execute permission to all subdirectories for all users
 12-directory permisions will create a directory and give permisions 751
 13- change group will change the group owner of a file
-14- 
+100-change group owner & group will change the aforementioned simultaneously
+101- symbolic link will change the owner and group owner of a symbolic link without affecting the link 
+102 if only will only change the owner of a file if it belongs to the specified user
+103- starwars will play starwars 4 in the terminal 
