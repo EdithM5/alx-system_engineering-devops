@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# will display only the names in a directory
+
+for file in *
+do
+  if [ "${file:0:1}" != "." ] && [ -f "$file" ]; 
+  then
+    name="$(echo "$file" | cut -d'-' -f2-)"
+    echo "$name"
+  fi
+done
