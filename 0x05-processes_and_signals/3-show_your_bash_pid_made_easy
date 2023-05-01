@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# display all processes for bash only, all users even
+# those without TTY
+# in a user-oriented format and showing process hierarchy
+
+pgrep bash -l
