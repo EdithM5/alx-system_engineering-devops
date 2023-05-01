@@ -6,19 +6,33 @@
 #   Deletes the earlier pid file and terminates when
 #   receiving command SIGQUIT or SIGTERM.
 
-terminator() 
-{
-  rm /var/run/myscript.pid
-  exit
-}
-
 echo "$$" > /var/run/myscript.pid
 
-while true
-do
-	echo "To infinity and beyond"
-	sleep 2
-	trap 'echo "Y U no love me?!"' SIGINT
-	trap 'echo "I hate the kill command" && terminator' SIGTERM
-	trap 'terminator' SIGQUIT
+# Function to handle signals
+function handle_signal {
+    signal=$1
+    case $signal in
+        SIGTERM | SIGQUIT)
+            # Delete PID file and terminate
+            rm /var/run/myscript.pid
+            exit 0
+            ;;
+        SIGINT)
+            echo "Y U no love me?!"
+            ;;
+        *)
+            echo "I hate the kill command"
+            ;;
+    esac
+}
+
+# Set signal handlers
+trap 'handle_signal SIGTERM' SIGTERM
+trap 'handle_signal SIGQUIT' SIGQUIT
+trap 'handle_signal SIGINT' SIGINT
+
+# Loop forever and display message
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
 done
