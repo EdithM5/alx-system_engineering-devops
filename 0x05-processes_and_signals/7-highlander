@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# will display to infinity and beyond
+#followed by a 2 second break then prints again
+# i am invincible when a sigterm is performed
+
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
+done
