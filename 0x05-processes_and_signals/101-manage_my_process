@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #   When passed the argument `start`:
 #     1. Start manage_my_process
 #     2. Create a file containings it's PID in /var/run/my_process.pid
