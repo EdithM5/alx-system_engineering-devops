@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# will listen on port 98 on localhost.
-
-while true; do
-  nc -l localhost 98
-done
